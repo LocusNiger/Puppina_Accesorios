@@ -1,0 +1,942 @@
+@import 'reset';
+@import 'typo';
+@import 'layout';
+
+@media only screen and (min-width: 1px) and (max-width: 500px){
+    body{
+        background-color: #ffffff;
+    }
+    
+    .nav-link{      /* Secciones del nav */
+        font-size: 1.6rem;
+        padding: .5rem;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+    
+    .index__logo{       /* Logo del index */
+        width: 96vw;
+        height: 8rem;
+        margin-bottom: 2.5rem;
+        a{
+            img{
+                width: 15rem;
+            }
+        }
+    } 
+    /* -------------------------------- SECCIÓN INDEX -------------------------------- */
+    .index__novedades{     /* Carousel index (novedades) */
+    
+        .index__titulo{     /* Contenedor de títulos del index */
+            height: 5rem;
+            padding: 1rem 0;
+            margin: 1rem 0 1rem 0;
+        }
+    
+        img{            /* imágenes del carrusel */
+            width: 96vw;
+        }
+    
+        .index__button{     /* contenedor del botón */
+            border: solid black 1px;
+            margin: 2rem 6rem 2rem 6rem;
+            padding: 1rem 0.5rem;
+            transition: all 0.3s;
+            a{
+                color: black;       /* Color del texto */
+            }
+        }
+    
+        div.index__button:hover{
+            background-color: black;    /* Animación */
+            a{
+                color: white;
+            }
+        }
+    }
+    
+    .index__productos{      /* Grid de productos en oferta */
+        margin-top: 4.5rem;
+        h3{
+            margin: 1rem 0 2rem 0;
+        }
+        .index__gridproductos{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 44vw 44vw;
+            grid-template-rows: 27.5rem 27.5rem 27.5rem;
+            gap: 2rem 5vw;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+    .index__newsletter{     /* Sección newsletter */
+        margin-top: 3rem;
+        h3{
+            margin: 1rem 0 2rem 0;
+        }
+        p{
+            margin-bottom: 1rem;
+        }
+        input{
+            margin: 1rem 0 3rem 0;
+            width: 80vw;
+        }
+    }
+    /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
+    .productos{
+        margin-top: 4.5rem;
+        .productos__titulo{
+            margin-bottom: 2rem;
+        }
+    
+        .productos__grid{       /* grid de productos */
+            display: grid;
+            grid-template-columns: 44vw 44vw;
+            grid-template-rows: repeat(6,29rem);
+            gap: 2rem 5vw;
+            img{
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+            .texto{
+                margin-bottom: 0.3rem;      /* para sacarle el margen */
+            }
+            .productos__botonComprar{
+                border: 1px solid black;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
+    .quienesSomos{
+        .quienesSomos__titulo{
+            margin: 2rem 0;
+        }
+        .quienesSomos__contenedor{
+            border: 1.5px solid black;
+            padding: 1.5rem;
+        }
+    
+        .quienesSomos__imagenes{
+            width: 100%;
+            margin: 3rem 0;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
+    .contacto{
+        border: black solid 1px;
+        width: 80vw;
+        margin-bottom: 3rem;
+        .contacto__titulo{
+            margin: 2rem 0;
+        }
+        .contacto__contenedor{
+            .contacto__form{
+                width: 80vw;
+                margin-bottom: 1.5rem;
+                input{
+                    width: 75%;
+                }
+                textarea{
+                    width: 75%;
+                }
+            }
+            .contacto__button{
+                border: solid black 1px;
+                margin: 2rem 6rem 2rem 6rem;
+                padding: 1rem 0.5rem;
+                transition: all 0.3s;
+                width: 60vw;
+                a{
+                    color: black;       /* Color del texto */
+                }
+            }
+            div.contacto__button:hover{
+                background-color: black;    /* Animación */
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    .contacto__GIT{
+        background-color: black;
+        width: 80vw;
+        padding: 1rem;
+        .contacto__GIT__titulo{
+            h2{
+                margin: 3rem 0;
+                color: white;
+            }
+        }
+        .contacto__GIT__contenedor{
+            div{
+                margin-bottom: 3rem;
+                p{
+                    color: white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
+    .preguntas{
+        border: black solid 1.5px;
+        width: 80vw;
+        margin-bottom: 3rem;
+        .preguntas__titulo{
+            margin: 2rem 0;
+            text-align: center;
+        }
+    
+        .preguntas__contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            h2{
+                text-align: center;
+                width: 60%;
+                padding: 1rem 0;
+            }
+            h2:hover{
+                color: black;
+            }
+            a{  
+                padding: 1rem 0;
+                text-align: center;
+                width: 80%;
+                border-bottom: solid 1px #e7e7e7;
+            }
+            a:hover{
+                color: black;
+            }
+            .preguntas__rta{
+                width: 70%;
+                text-align: justify;
+                text-justify: distribute;
+            }
+        }
+    }
+    /* -------------------------------------- FOOTER ----------------------------------------- */
+    footer{     
+        a:hover{        /* Para c/link del footer */
+            color: #000;
+        }
+        margin: 2rem 0;
+        padding: 2.5rem 0 0 0;
+        border-top: 1px solid black;
+        
+        .footer__seccion{       /* Cada sección del footer */
+            margin-bottom: 2.5rem;
+            h3{
+                padding-left: 2rem;
+            }
+    
+            .footer__logos{
+                margin-top: 1rem;
+                padding-left: 2rem;
+                img{
+                    display: inline-block;
+                    width: 3rem;
+                    margin-right: 1.5rem;
+                    transition: all 0.3s;
+                }
+                img:hover{
+                    width: 3.3rem;
+                }
+            }
+        }
+    
+        ul li{
+            list-style: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1024px){
+    /* -------------------------------------- NAV ----------------------------------------- */
+    .collapse{
+        .nav-link{
+            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            margin-left: 1rem;
+        }
+    }
+    /* -------------------------------- SECCIÓN INDEX -------------------------------- */
+    .index__logo{
+        height: 16rem;
+        img{
+            width: 18vw;
+        }
+    }
+
+    .index__novedades{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        .index__titulo{
+            margin: 2rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+
+        .contenedorCarousel{
+            img{
+                width: 50rem;
+            }
+        }
+
+        #index__contenedorButton{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .index__button{
+                border: solid black 1px;
+                padding: 1rem 0.5rem;
+                margin: 5rem;
+                transition: all 0.3s;
+                width: 15vw;
+                a{
+                    color: black;       /* Color del texto */
+                }
+            }
+            div.index__button:hover{
+                background-color: black;    /* Animación */
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    .index__productos{
+        .index__titulo{
+            margin: 2rem 0;
+            h2{
+                font-size: 4rem;
+            }
+        }
+        h3{
+            font-size: 2.5rem;
+            margin: 3rem 0 5rem 0;
+        }
+
+        .index__gridproductos{
+            display: grid;
+            grid-template-columns:  27vw 27vw 27vw;
+            grid-template-rows: auto auto;
+            gap: 3rem 8.5vw;
+            place-items: center;
+            img{
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+            .texto{
+                font-size: 1.8rem;
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+            .precio_oferta{
+                font-size: 1.6rem;
+                padding: 0 1rem;
+            }
+            .precio{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .index__newsletter{
+        h3{
+            font-size: 4rem;
+            margin: 5rem 0 3rem 0;
+        }
+        p{
+            font-size: 2.5rem;
+            margin: 3rem 0;
+        }
+        input{
+            margin: 0.5rem 0 3rem 0;
+            width: 50vw;
+            height: 3rem;
+        }
+
+    }
+    /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
+    .productos{
+        padding: 4rem;
+        margin-bottom: 2rem;
+        .productos__titulo{
+            margin: 2rem 0 4rem 0;
+            h2{
+                font-size: 4rem;
+            }
+        }
+
+        .productos__grid{
+            display: grid;
+            grid-template-columns:  25vw 25vw 25vw;
+            grid-template-rows: auto;
+            gap: 3rem 8.5vw;
+            justify-content: center;
+            .productos__contenedor{
+                border: black solid 1px;
+            }
+
+            img{
+                width: 100%;
+                padding: 1rem;
+            }
+            .texto{
+                font-size: 2rem;
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+            .precio{
+                font-size: 2rem;
+                padding: 0 1rem;
+            }
+            .productos__botonComprar{
+                border: 1.5px solid black;
+                margin: 2rem;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
+    .quienesSomos{
+        border: 1.5px solid black;
+        padding: 4rem;
+        width: 70%;
+        margin-bottom: 5rem;
+        .quienesSomos__titulo{
+            margin: 2rem 0 4rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+
+        .quienesSomos__contenedor{
+            flex-direction: column;
+            p{  
+                text-align: justify;
+                font-size: 1.8rem;
+            }
+        }
+
+        .quienesSomos__imagenes{
+            margin: 3rem 0;
+            img{
+                width: 25%;
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
+    .contacto{
+        border: 1.5px solid black;
+        width: 50%;
+        padding: 4rem;
+        .contacto__titulo{
+            margin: 2rem 0 4rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+        .contacto__contenedor{      /* Contenedor de form + botón */
+            font-size: 1.8rem;
+            .contacto__form{        /* Formulario de contacto */
+                margin-bottom: 2rem;
+                input{
+                    font-size: 1.6rem;
+                    width: 40rem;
+                }
+                textarea{
+                    font-size: 1.6rem;
+                    width: 40rem;
+                }
+            }
+            .contacto__button{
+                border: solid black 1px;
+                margin: 2rem 6rem 2rem 6rem;
+                padding: 1rem 0.5rem;
+                transition: all 0.3s;
+                width: 40rem;
+                a{
+                    color: black;       /* Color del texto */
+                }
+            }
+            div.contacto__button:hover{
+                background-color: black;    /* Animación */
+                a{
+                    color: white;
+                }
+            }
+        }
+        
+    }
+    .contacto__GIT{
+        width: 50%;
+        background-color: black;
+        margin-top: 3rem;
+        padding: 4rem;
+        margin-bottom: 5rem;
+        .contacto__GIT__titulo{
+            margin: 2rem 0 4rem 0;
+            h2{
+                font-size: 4rem;
+                color: white;
+            }
+        }
+        .contacto__GIT__contenedor{
+            font-size: 1.8rem;
+            div{
+                margin-bottom: 3rem;
+                p{
+                    font-size: 1.9rem;
+                    margin-bottom: 0;
+                    color: white;
+                }
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
+    .preguntas{
+        border: black solid 1.5px;
+        width: 60%;
+        padding: 4rem;
+        .preguntas__titulo{
+            text-align: center;
+            margin: 2rem 0 4rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+        .preguntas__contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            h2{
+                text-align: center;
+                width: 60%;
+                padding: 1rem 0;
+                font-size: 2.3rem;
+            }
+            h2:hover{
+                color: black;
+            }
+            a{  
+                padding: 1rem 0;
+                text-align: center;
+                width: 80%;
+                border-bottom: solid 1px #e7e7e7;
+                font-size: 2rem;
+            }
+            a:hover{
+                color: black;
+            }
+            .preguntas__rta{
+                font-size: 1.8rem;
+                width: 70%;
+                text-align: justify;
+                text-justify: distribute;
+            }
+        }
+        
+    }
+    /* -------------------------------------- FOOTER ----------------------------------------- */
+    footer{
+        border-top: 1px solid black;
+        margin: 2rem 0;
+        padding: 2.5rem 0 0 0;
+        display: flex;
+        justify-content: space-around;
+
+
+        a:hover{        /* Para c/link del footer */
+            color: #000;
+        }
+
+        .footer__seccion{       /* Cada sección del footer */
+            margin-bottom: 2.5rem;
+            h3{
+                padding-left: 2rem;
+            }
+
+            .footer__logos{
+                margin-top: 1rem;
+                padding-left: 2rem;
+                img{
+                    display: inline-block;
+                    width: 3rem;
+                    margin-right: 1.5rem;
+                    transition: all 0.3s;
+                }
+                img:hover{
+                    width: 3.3rem;
+                }
+            }
+        }
+
+        ul li{
+            list-style: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px){
+     /* -------------------------------------- NAV ----------------------------------------- */
+     .collapse{
+        .nav-link{
+            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            margin-left: 1rem;
+        }
+    }
+    /* -------------------------------- SECCIÓN INDEX -------------------------------- */
+    .index__logo{
+        height: 16rem;
+        img{
+            width: 18vw;
+        }
+    }
+
+    .index__novedades{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        .index__titulo{
+            margin: 2rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+
+        .contenedorCarousel{
+            img{
+                width: 50rem;
+            }
+        }
+
+        #index__contenedorButton{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .index__button{
+                border: solid black 1px;
+                padding: 1rem 0.5rem;
+                margin: 5rem;
+                transition: all 0.3s;
+                width: 15vw;
+                a{
+                    color: black;       /* Color del texto */
+                }
+            }
+            div.index__button:hover{
+                background-color: black;    /* Animación */
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    .index__productos{
+        .index__titulo{
+            margin: 2rem 0;
+            h2{
+                font-size: 4rem;
+            }
+        }
+        h3{
+            font-size: 2.5rem;
+            margin: 3rem 0 5rem 0;
+        }
+
+        .index__gridproductos{
+            display: grid;
+            grid-template-columns:  27vw 27vw 27vw;
+            grid-template-rows: auto auto;
+            gap: 3rem 8.5vw;
+            place-items: center;
+            img{
+                width: 100%;
+                padding: 0 1rem;
+            }
+
+            .texto{
+                font-size: 1.8rem;
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+            .precio_oferta{
+                font-size: 1.6rem;
+                padding: 0 1rem;
+            }
+            .precio{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .index__newsletter{
+        h3{
+            font-size: 4rem;
+            margin: 5rem 0 3rem 0;
+        }
+        p{
+            font-size: 2.5rem;
+            margin: 3rem 0;
+        }
+        input{
+            margin: 0.5rem 0 3rem 0;
+            width: 50vw;
+            height: 3rem;
+        }
+
+    }
+    /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
+    .productos{
+        padding: 4rem;
+        margin-bottom: 2rem;
+        .productos__titulo{
+            margin: 2rem 0 4rem 0;
+            h2{
+                font-size: 4rem;
+            }
+        }
+
+        .productos__grid{
+            display: grid;
+            grid-template-columns:  25vw 25vw 25vw;
+            grid-template-rows: auto;
+            gap: 3rem 8.5vw;
+            justify-content: center;
+            .productos__contenedor{
+                border: black solid 1px;
+            }
+
+            img{
+                width: 100%;
+                padding: 1rem;
+            }
+            .texto{
+                font-size: 2rem;
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+            .precio{
+                font-size: 2rem;
+                padding: 0 1rem;
+            }
+            .productos__botonComprar{
+                border: 1.5px solid black;
+                margin: 2rem;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
+    .quienesSomos{
+        border: 1.5px solid black;
+        padding: 4rem;
+        width: 70%;
+        margin-bottom: 5rem;
+        .quienesSomos__titulo{
+            margin: 2rem 0 4rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+
+        .quienesSomos__contenedor{
+            flex-direction: column;
+            p{  
+                text-align: justify;
+                font-size: 1.8rem;
+            }
+        }
+
+        .quienesSomos__imagenes{
+            margin: 3rem 0;
+            img{
+                width: 25%;
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
+    .contacto{
+        border: 1.5px solid black;
+        width: 50%;
+        padding: 4rem;
+        .contacto__titulo{
+            margin: 2rem 0 4rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+        .contacto__contenedor{      /* Contenedor de form + botón */
+            font-size: 1.8rem;
+            .contacto__form{        /* Formulario de contacto */
+                margin-bottom: 2rem;
+                input{
+                    font-size: 1.6rem;
+                    width: 40rem;
+                }
+                textarea{
+                    font-size: 1.6rem;
+                    width: 40rem;
+                }
+            }
+            .contacto__button{
+                border: solid black 1px;
+                margin: 2rem 6rem 2rem 6rem;
+                padding: 1rem 0.5rem;
+                transition: all 0.3s;
+                width: 40rem;
+                a{
+                    color: black;       /* Color del texto */
+                }
+            }
+            div.contacto__button:hover{
+                background-color: black;    /* Animación */
+                a{
+                    color: white;
+                }
+            }
+        }
+        
+    }
+    .contacto__GIT{
+        width: 50%;
+        background-color: black;
+        margin-top: 3rem;
+        padding: 4rem;
+        margin-bottom: 5rem;
+        .contacto__GIT__titulo{
+            margin: 2rem 0 4rem 0;
+            h2{
+                font-size: 4rem;
+                color: white;
+            }
+        }
+        .contacto__GIT__contenedor{
+            font-size: 1.8rem;
+            div{
+                margin-bottom: 3rem;
+                p{
+                    font-size: 1.9rem;
+                    margin-bottom: 0;
+                    color: white;
+                }
+            }
+        }
+    }
+    /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
+    .preguntas{
+        border: black solid 1.5px;
+        width: 60%;
+        padding: 4rem;
+        .preguntas__titulo{
+            text-align: center;
+            margin: 2rem 0 4rem 0;
+            h1{
+                font-size: 4rem;
+            }
+        }
+        .preguntas__contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            h2{
+                text-align: center;
+                width: 60%;
+                padding: 1rem 0;
+                font-size: 2.3rem;
+            }
+            h2:hover{
+                color: black;
+            }
+            a{  
+                padding: 1rem 0;
+                text-align: center;
+                width: 80%;
+                border-bottom: solid 1px #e7e7e7;
+                font-size: 2rem;
+            }
+            a:hover{
+                color: black;
+            }
+            .preguntas__rta{
+                font-size: 1.8rem;
+                width: 70%;
+                text-align: justify;
+                text-justify: distribute;
+            }
+        }
+        
+    }
+    /* -------------------------------------- FOOTER ----------------------------------------- */
+    footer{
+        border-top: 1px solid black;
+        margin: 2rem 0;
+        padding: 2.5rem 0 0 0;
+        display: flex;
+        justify-content: space-around;
+
+
+        a:hover{        /* Para c/link del footer */
+            color: #000;
+        }
+
+        .footer__seccion{       /* Cada sección del footer */
+            margin-bottom: 2.5rem;
+            h3{
+                padding-left: 2rem;
+            }
+
+            .footer__logos{
+                margin-top: 1rem;
+                padding-left: 2rem;
+                img{
+                    display: inline-block;
+                    width: 3rem;
+                    margin-right: 1.5rem;
+                    transition: all 0.3s;
+                }
+                img:hover{
+                    width: 3.3rem;
+                }
+            }
+        }
+
+        ul li{
+            list-style: none;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* Para calcular las unidades relativas con 10px de base */
+    a{
+        text-decoration: none;
+        color: #212529;
+    }
+}

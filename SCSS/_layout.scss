@@ -1,0 +1,12 @@
+.centrar{           /* Para centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrar--vertical{           /* Para centrar contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

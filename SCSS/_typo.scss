@@ -1,0 +1,65 @@
+.titulo{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #000;
+}
+
+.subtitulo--index{
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #000;
+}
+
+.subtitulo{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.subtitulo--preguntas{      /* Bordes de la sección preguntas frecuentes */
+    border: solid 1.5px;        
+    border-color: white  #212529 #212529 white;
+    text-transform: uppercase;
+}
+
+.texto{
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.texto--preguntas{          /* Textos de la sección preguntas frecuentes */
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.negrita{       /* Para los span en negrita */
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.precio_oferta{         /* De la sección index */
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+.precio{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+}
+
+.botones{
+    font-weight: 500;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
