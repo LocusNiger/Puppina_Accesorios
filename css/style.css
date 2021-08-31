@@ -571,13 +571,16 @@ html {
     margin: 3rem 0 5rem 0; }
   .index__productos .index__gridproductos {
     display: grid;
-    grid-template-columns: 27vw 27vw 27vw;
+    grid-template-columns: 25vw 25vw 25vw;
     grid-template-rows: auto auto;
     gap: 3rem 8.5vw;
-    place-items: center; }
+    justify-content: center; }
+    .index__productos .index__gridproductos .index__prod {
+      border: solid 1px black;
+      padding: 1rem; }
     .index__productos .index__gridproductos img {
       width: 100%;
-      padding: 0 1rem; }
+      padding: 1rem; }
     .index__productos .index__gridproductos .texto {
       font-size: 1.8rem;
       margin-top: 1rem;
@@ -587,16 +590,18 @@ html {
       padding: 0 1rem; }
     .index__productos .index__gridproductos .precio {
       font-size: 2rem; }
-  .index__newsletter h3 {
-    font-size: 4rem;
-    margin: 5rem 0 3rem 0; }
-  .index__newsletter p {
-    font-size: 2.5rem;
-    margin: 3rem 0; }
-  .index__newsletter input {
-    margin: 0.5rem 0 3rem 0;
-    width: 50vw;
-    height: 3rem; }
+  .index__newsletter {
+    margin: 7rem 0 5rem 0; }
+    .index__newsletter h3 {
+      font-size: 4rem;
+      margin: 5rem 0 3rem 0; }
+    .index__newsletter p {
+      font-size: 2.5rem;
+      margin: 3rem 0; }
+    .index__newsletter input {
+      margin: 0.5rem 0 3rem 0;
+      width: 50vw;
+      height: 3rem; }
   /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
   .productos {
     padding: 4rem;
