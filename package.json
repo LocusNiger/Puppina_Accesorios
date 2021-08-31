@@ -13,5 +13,14 @@
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LocusNiger/mi_repositorio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LocusNiger/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/LocusNiger/mi_repositorio#readme"
 }

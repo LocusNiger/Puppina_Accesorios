@@ -603,7 +603,7 @@ html {
     margin-bottom: 2rem; }
     .productos .productos__titulo {
       margin: 2rem 0 4rem 0; }
-      .productos .productos__titulo h2 {
+      .productos .productos__titulo h1 {
         font-size: 4rem; }
     .productos .productos__grid {
       display: grid;
