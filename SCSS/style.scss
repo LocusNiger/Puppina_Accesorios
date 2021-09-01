@@ -33,7 +33,11 @@
             padding: 1rem 0;
             margin: 1rem 0 1rem 0;
         }
-    
+        
+        .contenedorCarousel--desktop{        /* No muestro el carrusel de mobile */
+            display: none;
+        }
+
         img{            /* imágenes del carrusel */
             width: 96vw;
         }
@@ -294,10 +298,8 @@
             }
         }
 
-        .contenedorCarousel{
-            img{
-                width: 50rem;
-            }
+        .contenedorCarousel{        /* No muestro el carrusel de mobile */
+            display: none;
         }
 
         #index__contenedorButton{
@@ -632,10 +634,8 @@
             }
         }
 
-        .contenedorCarousel{
-            img{
-                width: 50rem;
-            }
+        .contenedorCarousel{        /* No muestro el carrusel de mobile */
+            display: none;
         }
 
         #index__contenedorButton{

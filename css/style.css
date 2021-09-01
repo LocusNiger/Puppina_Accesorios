@@ -108,6 +108,9 @@ html {
       height: 5rem;
       padding: 1rem 0;
       margin: 1rem 0 1rem 0; }
+    .index__novedades .contenedorCarousel--desktop {
+      /* No muestro el carrusel de mobile */
+      display: none; }
     .index__novedades img {
       /* imágenes del carrusel */
       width: 96vw; }
@@ -298,8 +301,9 @@ html {
       margin: 2rem 0; }
       .index__novedades .index__titulo h1 {
         font-size: 4rem; }
-    .index__novedades .contenedorCarousel img {
-      width: 50rem; }
+    .index__novedades .contenedorCarousel {
+      /* No muestro el carrusel de mobile */
+      display: none; }
     .index__novedades #index__contenedorButton {
       width: 100%;
       display: flex;
@@ -542,8 +546,9 @@ html {
       margin: 2rem 0; }
       .index__novedades .index__titulo h1 {
         font-size: 4rem; }
-    .index__novedades .contenedorCarousel img {
-      width: 50rem; }
+    .index__novedades .contenedorCarousel {
+      /* No muestro el carrusel de mobile */
+      display: none; }
     .index__novedades #index__contenedorButton {
       width: 100%;
       display: flex;
