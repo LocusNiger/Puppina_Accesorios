@@ -772,7 +772,7 @@
         border: 1.5px solid black;
         padding: 4rem;
         width: 70%;
-        margin-bottom: 5rem;
+        margin-bottom: 7rem;
         .quienesSomos__titulo{
             margin: 2rem 0 4rem 0;
             h1{
@@ -796,10 +796,18 @@
         }
     }
     /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
+    
+    .gridContacto{          /* Para el grid en versión desktop */
+        display: grid;
+        grid-template-columns: 50vw 40vw;
+        grid-template-rows: auto;
+        gap: 0 5rem;
+    }
+    
     .contacto{
-        border: 1.5px solid black;
-        width: 50%;
+        width: 100%;
         padding: 4rem;
+        margin-top: 3rem;
         .contacto__titulo{
             margin: 2rem 0 4rem 0;
             h1{
@@ -839,7 +847,8 @@
         
     }
     .contacto__GIT{
-        width: 50%;
+        width: 100%;
+        height: 52%;
         background-color: black;
         margin-top: 3rem;
         padding: 4rem;
@@ -853,6 +862,15 @@
         }
         .contacto__GIT__contenedor{
             font-size: 1.8rem;
+            .icono2{
+                padding-right: 1rem;
+            }
+            #whatsapp{
+                color: #25d366;
+            }
+            #instagram{
+                color: #d62976;
+            }
             div{
                 margin-bottom: 3rem;
                 p{
@@ -868,6 +886,7 @@
         border: black solid 1.5px;
         width: 60%;
         padding: 4rem;
+        margin-bottom: 7rem;
         .preguntas__titulo{
             text-align: center;
             margin: 2rem 0 4rem 0;
