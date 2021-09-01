@@ -731,6 +731,8 @@ html {
         margin-bottom: 1.5rem; }
       .preguntas .preguntas__contenedor h2:hover {
         color: black; }
+      .preguntas .preguntas__contenedor .icono {
+        padding: .5rem; }
       .preguntas .preguntas__contenedor a {
         padding: 1rem 0;
         text-align: center;
