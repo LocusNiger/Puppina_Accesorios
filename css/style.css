@@ -102,7 +102,7 @@ html {
       width: 15rem; }
   /* -------------------------------- SECCIÓN INDEX -------------------------------- */
   .index__novedades {
-    /* Carousel index (novedades) */ }
+    /* Index (novedades) */ }
     .index__novedades .index__titulo {
       /* Contenedor de títulos del index */
       height: 5rem;
@@ -169,10 +169,15 @@ html {
         margin-bottom: 0.3rem;
         /* para sacarle el margen */ }
       .productos .productos__grid .productos__botonComprar {
-        border: 1px solid black; }
+        border: 1px solid black;
+        transition: all 0.3s; }
         .productos .productos__grid .productos__botonComprar a {
           text-decoration: none;
           color: black; }
+      .productos .productos__grid .productos__botonComprar:hover {
+        background-color: black; }
+        .productos .productos__grid .productos__botonComprar:hover a {
+          color: white; }
   /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
   .quienesSomos .quienesSomos__titulo {
     margin: 2rem 0; }
@@ -390,11 +395,16 @@ html {
         font-size: 2rem;
         padding: 0 1rem; }
       .productos .productos__grid .productos__botonComprar {
-        border: 1.5px solid black;
-        margin: 2rem; }
+        border: 1px solid black;
+        margin: 2rem;
+        transition: all 0.3s; }
         .productos .productos__grid .productos__botonComprar a {
           text-decoration: none;
           color: black; }
+      .productos .productos__grid .productos__botonComprar:hover {
+        background-color: black; }
+        .productos .productos__grid .productos__botonComprar:hover a {
+          color: white; }
   /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
   .quienesSomos {
     border: 1.5px solid black;
@@ -646,11 +656,16 @@ html {
         font-size: 2rem;
         padding: 0 1rem; }
       .productos .productos__grid .productos__botonComprar {
-        border: 1.5px solid black;
-        margin: 2rem; }
+        border: 1px solid black;
+        margin: 2rem;
+        transition: all 0.3s; }
         .productos .productos__grid .productos__botonComprar a {
           text-decoration: none;
           color: black; }
+      .productos .productos__grid .productos__botonComprar:hover {
+        background-color: black; }
+        .productos .productos__grid .productos__botonComprar:hover a {
+          color: white; }
   /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
   .quienesSomos {
     border: 1.5px solid black;

@@ -26,7 +26,7 @@
         }
     } 
     /* -------------------------------- SECCIÓN INDEX -------------------------------- */
-    .index__novedades{     /* Carousel index (novedades) */
+    .index__novedades{     /* Index (novedades) */
     
         .index__titulo{     /* Contenedor de títulos del index */
             height: 5rem;
@@ -111,9 +111,16 @@
             }
             .productos__botonComprar{
                 border: 1px solid black;
+                transition: all 0.3s;
                 a{
                     text-decoration: none;
                     color: black;
+                }
+            }
+            .productos__botonComprar:hover{
+                background-color: black;
+                a{
+                    color: white;
                 }
             }
         }
@@ -423,11 +430,18 @@
                 padding: 0 1rem;
             }
             .productos__botonComprar{
-                border: 1.5px solid black;
+                border: 1px solid black;
                 margin: 2rem;
+                transition: all 0.3s;
                 a{
                     text-decoration: none;
                     color: black;
+                }
+            }
+            .productos__botonComprar:hover{
+                background-color: black;
+                a{
+                    color: white;
                 }
             }
         }
@@ -774,11 +788,18 @@
                 padding: 0 1rem;
             }
             .productos__botonComprar{
-                border: 1.5px solid black;
+                border: 1px solid black;
                 margin: 2rem;
+                transition: all 0.3s;
                 a{
                     text-decoration: none;
                     color: black;
+                }
+            }
+            .productos__botonComprar:hover{
+                background-color: black;
+                a{
+                    color: white;
                 }
             }
         }
