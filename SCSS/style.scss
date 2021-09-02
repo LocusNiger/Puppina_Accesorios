@@ -318,6 +318,10 @@
             display: none;
         }
 
+        .contenedorCarousel--desktop{       /* Margen carrusel tablet */
+            margin-top: 2rem;
+        }
+
         #index__contenedorButton{
             width: 100%;
             display: flex;
@@ -668,7 +672,11 @@
             display: none;
         }
 
-        #index__contenedorButton{
+        .contenedorCarousel--desktop{       /* Margen en el carrusel */
+            margin-top: 2rem;
+        }
+
+        #index__contenedorButton{       /* Estilos del boton "ver mas" */
             width: 100%;
             display: flex;
             justify-content: center;
