@@ -219,6 +219,12 @@ html {
     .contacto__GIT .contacto__GIT__titulo h2 {
       margin: 3rem 0;
       color: white; }
+    .contacto__GIT .contacto__GIT__contenedor .icono2 {
+      padding-right: 1rem; }
+    .contacto__GIT .contacto__GIT__contenedor #whatsapp {
+      color: #25d366; }
+    .contacto__GIT .contacto__GIT__contenedor #instagram {
+      color: #d62976; }
     .contacto__GIT .contacto__GIT__contenedor div {
       margin-bottom: 3rem; }
       .contacto__GIT .contacto__GIT__contenedor div p {
@@ -409,6 +415,12 @@ html {
       .quienesSomos .quienesSomos__imagenes img {
         width: 25%; }
   /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
+  .gridContacto {
+    /* Para el grid en versión desktop */
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    grid-template-rows: auto;
+    gap: 0 5rem; }
   .contacto {
     border: 1.5px solid black;
     width: 50%;
