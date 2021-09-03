@@ -151,6 +151,20 @@ html {
     .index__newsletter input {
       margin: 1rem 0 3rem 0;
       width: 80vw; }
+    .index__newsletter .index__button {
+      /* contenedor del botón */
+      border: solid black 1px;
+      margin: 2rem 6rem 4rem 6rem;
+      padding: 1rem 0.5rem;
+      transition: all 0.3s; }
+      .index__newsletter .index__button a {
+        color: black;
+        /* Color del texto */ }
+    .index__newsletter div.index__button:hover {
+      background-color: black;
+      /* Animación */ }
+      .index__newsletter div.index__button:hover a {
+        color: white; }
   /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
   .productos {
     margin-top: 4.5rem; }
@@ -371,6 +385,25 @@ html {
     margin: 0.5rem 0 3rem 0;
     width: 50vw;
     height: 3rem; }
+  .index__newsletter #index__contenedorButton {
+    /* Botón ENVIAR newsletter */
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .index__newsletter #index__contenedorButton .index__button {
+      border: solid black 1px;
+      padding: 1rem 0.5rem;
+      margin: 2rem 0 4rem 0;
+      transition: all 0.3s;
+      width: 15vw; }
+      .index__newsletter #index__contenedorButton .index__button a {
+        color: black;
+        /* Color del texto */ }
+    .index__newsletter #index__contenedorButton div.index__button:hover {
+      background-color: black;
+      /* Animación */ }
+      .index__newsletter #index__contenedorButton div.index__button:hover a {
+        color: white; }
   /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
   .productos {
     padding: 4rem;
@@ -636,6 +669,25 @@ html {
       margin: 0.5rem 0 3rem 0;
       width: 50vw;
       height: 3rem; }
+    .index__newsletter #index__contenedorButton {
+      /* Estilos del boton "Enviar" */
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .index__newsletter #index__contenedorButton .index__button {
+        border: solid black 1px;
+        padding: 1rem 0.5rem;
+        margin: 2rem 0;
+        transition: all 0.3s;
+        width: 15vw; }
+        .index__newsletter #index__contenedorButton .index__button a {
+          color: black;
+          /* Color del texto */ }
+      .index__newsletter #index__contenedorButton div.index__button:hover {
+        background-color: black;
+        /* Animación */ }
+        .index__newsletter #index__contenedorButton div.index__button:hover a {
+          color: white; }
   /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
   .productos {
     padding: 4rem;
