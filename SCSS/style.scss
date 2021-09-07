@@ -161,6 +161,34 @@
         }
     }
     /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
+    .contacto__banner{          /* Banner "CONTACTANOS" */
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        .contacto__textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 3.4rem;
+        }
+        .contacto__textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 1.7rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
+    
     .contacto{
         border: black solid 1px;
         width: 80vw;
@@ -302,7 +330,7 @@
     }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 1024px){
+@media only screen and (min-width: 500px) and (max-width: 1024px){
     /* -------------------------------------- NAV ----------------------------------------- */
     .collapse{
         .nav-link{
@@ -521,17 +549,46 @@
         }
     }
     /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
-    .gridContacto{          /* Para el grid en versión desktop */
+    .contacto__banner{          /* Banner "CONTACTANOS" */
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        background-color: black;
+
+        .contacto__textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 6.5rem;
+        }
+        .contacto__textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 2.5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
+    
+    .gridContacto{          /* Para el grid en versión tablet */
         display: grid;
-        grid-template-columns: 50vw 40vw;
+        grid-template-columns: 50vw 45vw;
         grid-template-rows: auto;
-        gap: 0 5rem;
+        justify-content: center;
+        gap: 0 0vw;
     }
     
     .contacto{
-        border: 1.5px solid black;
-        width: 50%;
-        padding: 4rem;
+        width: 100%;
+        padding: 4rem 0;
+        margin: 0;
         .contacto__titulo{
             margin: 2rem 0 4rem 0;
             h1{
@@ -544,19 +601,25 @@
                 margin-bottom: 2rem;
                 input{
                     font-size: 1.6rem;
-                    width: 40rem;
+                    width: 45vw;
+                    padding: 1.2rem 1.5rem;
+                    background-color: #f6f6f6;
+                    border: 0;
+                    
                 }
                 textarea{
                     font-size: 1.6rem;
-                    width: 40rem;
+                    width: 45vw;
+                    padding: 1.2rem 1.5rem;
+                    background-color: #f6f6f6;
+                    border: 0;
                 }
             }
             .contacto__button{
                 border: solid black 1px;
-                margin: 2rem 6rem 2rem 6rem;
-                padding: 1rem 0.5rem;
+                padding: 1rem 4rem;
                 transition: all 0.3s;
-                width: 40rem;
+                width: 45vw;
                 a{
                     color: black;       /* Color del texto */
                 }
@@ -570,21 +633,36 @@
         }
         
     }
-    .contacto__GIT{
-        width: 50%;
+    .contacto__GIT{         /* Section "get in touch" */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
         background-color: black;
-        margin-top: 3rem;
-        padding: 4rem;
-        margin-bottom: 5rem;
+        padding: 9.5rem 1rem 3.5rem 1rem;
+        margin: -5rem 0 5rem 0;
+        height: 65%;
         .contacto__GIT__titulo{
             margin: 2rem 0 4rem 0;
+            width: 100%;
+            text-align: left;
             h2{
-                font-size: 4rem;
+                font-size: 3.5rem;
                 color: white;
             }
         }
         .contacto__GIT__contenedor{
             font-size: 1.8rem;
+            .icono2{
+                padding-right: 1rem;
+            }
+            #whatsapp{
+                color: #25d366;
+            }
+            #instagram{
+                color: #d62976;
+            }
             div{
                 margin-bottom: 3rem;
                 p{
@@ -904,17 +982,48 @@
     }
     /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
     
+    .contacto__banner{          /* Banner "CONTACTANOS" */
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        height: 65vh;
+        overflow: hidden;
+
+        .contacto__textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 6.5rem;
+        }
+        .contacto__textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 2.5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
+
     .gridContacto{          /* Para el grid en versión desktop */
         display: grid;
-        grid-template-columns: 50vw 40vw;
+        grid-template-columns: 63vw 30vw;
         grid-template-rows: auto;
-        gap: 0 5rem;
+        justify-content: center;
+        gap: 0 0;
     }
     
     .contacto{
         width: 100%;
-        padding: 4rem;
-        margin-top: 3rem;
+        margin: 0;
         .contacto__titulo{
             margin: 2rem 0 4rem 0;
             h1{
@@ -926,20 +1035,24 @@
             .contacto__form{        /* Formulario de contacto */
                 margin-bottom: 2rem;
                 input{
-                    font-size: 1.6rem;
-                    width: 40rem;
+                    width: 55vw;
+                    padding: 1.2rem 1.5rem;
+                    background-color: #f6f6f6;
+                    border: 0;
                 }
                 textarea{
-                    font-size: 1.6rem;
-                    width: 40rem;
+                    width: 55vw;
+                    padding: 1.2rem 1.5rem;
+                    background-color: #f6f6f6;
+                    border: 0;
                 }
             }
             .contacto__button{
+                margin: 2rem 0;
                 border: solid black 1px;
-                margin: 2rem 6rem 2rem 6rem;
-                padding: 1rem 0.5rem;
+                padding: 1rem 4rem;
                 transition: all 0.3s;
-                width: 40rem;
+                width: 35vw;
                 a{
                     color: black;       /* Color del texto */
                 }
@@ -954,16 +1067,21 @@
         
     }
     .contacto__GIT{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         width: 100%;
-        height: 52%;
         background-color: black;
-        margin-top: 3rem;
-        padding: 4rem;
-        margin-bottom: 5rem;
+        padding: 9.5rem 1rem 3.5rem 1rem;
+        margin: -10rem 0 5rem 0;
+        height: 65%;
         .contacto__GIT__titulo{
             margin: 2rem 0 4rem 0;
+            width: 100%;
+            text-align: left;
             h2{
-                font-size: 4rem;
+                font-size: 3.5rem;
                 color: white;
             }
         }
@@ -981,7 +1099,7 @@
             div{
                 margin-bottom: 3rem;
                 p{
-                    font-size: 1.9rem;
+                    font-size: 1.6rem;
                     margin-bottom: 0;
                     color: white;
                 }
