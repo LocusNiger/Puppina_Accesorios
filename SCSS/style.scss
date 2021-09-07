@@ -7,6 +7,10 @@
         background-color: #ffffff;
     }
     
+    .navbar-logo{           /* No se muestra el logo en la parte izq del nav */
+        display: none;
+    }
+
     .nav-link{      /* Secciones del nav */
         font-size: 1.6rem;
         padding: .5rem;
@@ -336,6 +340,17 @@
 @media only screen and (min-width: 500px) and (max-width: 1024px){
     /* -------------------------------------- NAV ----------------------------------------- */
     .collapse{
+        .navbar-logo{           /* Logo en la parte izquierda del nav (only desktop/tablet) */
+            width: 12rem;
+            height: 6rem;
+            overflow: hidden;
+            img{
+                margin: -2.5rem 0 0 2rem;
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+
         .nav-link{
             font-size: 1.5rem;
             font-family: 'Poppins', sans-serif;
@@ -345,6 +360,7 @@
     }
     /* -------------------------------- SECCIÓN INDEX -------------------------------- */
     .index__logo{
+        display: none;
         height: 16rem;
         img{
             width: 18vw;
@@ -767,6 +783,17 @@
 @media only screen and (min-width: 1025px){
      /* -------------------------------------- NAV ----------------------------------------- */
      .collapse{
+        .navbar-logo{           /* Logo en la parte izquierda del nav (only desktop/tablet) */
+            width: 12rem;
+            height: 6rem;
+            overflow: hidden;
+            img{
+                margin: -2.5rem 0 0 2rem;
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+
         .nav-link{
             font-size: 1.5rem;
             font-family: 'Poppins', sans-serif;
@@ -775,7 +802,8 @@
         }
     }
     /* -------------------------------- SECCIÓN INDEX -------------------------------- */
-    .index__logo{
+    .index__logo{           /* Que no se muestre el logo (solo para mobile) */
+        display: none;
         height: 16rem;
         img{
             width: 18vw;

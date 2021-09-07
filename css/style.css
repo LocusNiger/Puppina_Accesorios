@@ -97,6 +97,9 @@ html {
 @media only screen and (min-width: 1px) and (max-width: 500px) {
   body {
     background-color: #ffffff; }
+  .navbar-logo {
+    /* No se muestra el logo en la parte izq del nav */
+    display: none; }
   .nav-link {
     /* Secciones del nav */
     font-size: 1.6rem;
@@ -350,6 +353,15 @@ html {
 
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
   /* -------------------------------------- NAV ----------------------------------------- */
+  .collapse .navbar-logo {
+    /* Logo en la parte izquierda del nav (only desktop/tablet) */
+    width: 12rem;
+    height: 6rem;
+    overflow: hidden; }
+    .collapse .navbar-logo img {
+      margin: -2.5rem 0 0 2rem;
+      width: 10rem;
+      height: 10rem; }
   .collapse .nav-link {
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -357,6 +369,7 @@ html {
     margin-left: 1rem; }
   /* -------------------------------- SECCIÓN INDEX -------------------------------- */
   .index__logo {
+    display: none;
     height: 16rem; }
     .index__logo img {
       width: 18vw; }
@@ -686,6 +699,15 @@ html {
 
 @media only screen and (min-width: 1025px) {
   /* -------------------------------------- NAV ----------------------------------------- */
+  .collapse .navbar-logo {
+    /* Logo en la parte izquierda del nav (only desktop/tablet) */
+    width: 12rem;
+    height: 6rem;
+    overflow: hidden; }
+    .collapse .navbar-logo img {
+      margin: -2.5rem 0 0 2rem;
+      width: 10rem;
+      height: 10rem; }
   .collapse .nav-link {
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -693,6 +715,8 @@ html {
     margin-left: 1rem; }
   /* -------------------------------- SECCIÓN INDEX -------------------------------- */
   .index__logo {
+    /* Que no se muestre el logo (solo para mobile) */
+    display: none;
     height: 16rem; }
     .index__logo img {
       width: 18vw; }
