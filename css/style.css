@@ -160,8 +160,11 @@ html {
     .index__newsletter p {
       margin-bottom: 1rem; }
     .index__newsletter input {
-      margin: 1rem 0 3rem 0;
-      width: 80vw; }
+      padding: 1.2rem 1.5rem;
+      background-color: #f6f6f6;
+      border: 0;
+      width: 80vw;
+      font-size: 1.6rem; }
     .index__newsletter .index__button {
       /* contenedor del botón */
       border: solid black 1px;
@@ -422,15 +425,20 @@ html {
       .index__productos .index__gridproductos .precio {
         font-size: 2rem; }
   .index__newsletter h3 {
+    /* Título NEWSLETTER */
     font-size: 4rem;
     margin: 5rem 0 3rem 0; }
   .index__newsletter p {
+    /* Texto subtítulo */
     font-size: 2.5rem;
     margin: 3rem 0; }
   .index__newsletter input {
-    margin: 0.5rem 0 3rem 0;
-    width: 50vw;
-    height: 3rem; }
+    /* Estilo del input */
+    font-size: 1.8rem;
+    width: 65vw;
+    padding: 1.2rem 1.5rem;
+    background-color: #f6f6f6;
+    border: 0; }
   .index__newsletter #index__contenedorButton {
     /* Botón ENVIAR newsletter */
     width: 100%;
@@ -758,9 +766,12 @@ html {
       font-size: 2.5rem;
       margin: 3rem 0; }
     .index__newsletter input {
+      font-size: 1.8rem;
       margin: 0.5rem 0 3rem 0;
-      width: 50vw;
-      height: 3rem; }
+      width: 65vw;
+      padding: 1.2rem 1.5rem;
+      background-color: #f6f6f6;
+      border: 0; }
     .index__newsletter #index__contenedorButton {
       /* Estilos del boton "Enviar" */
       width: 100%;
@@ -875,6 +886,7 @@ html {
     justify-content: center;
     gap: 0 0; }
   .contacto {
+    /* Parte del formulario de contacto */
     width: 100%;
     margin: 0; }
     .contacto .contacto__titulo {
