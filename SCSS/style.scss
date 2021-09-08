@@ -115,17 +115,33 @@
 
     }
     /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
-    .productos{
-        margin-top: 4.5rem;
-        .productos__titulo{
-            margin-bottom: 2rem;
+    .productos__banner{
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 4rem;
         }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
+    .productos{
     
         .productos__grid{       /* grid de productos */
             display: grid;
             grid-template-columns: 44vw 44vw;
             grid-template-rows: repeat(6,29rem);
             gap: 2rem 5vw;
+            margin-bottom: 5rem;
             img{
                 width: 100%;
                 margin: 0.5rem 0;
@@ -150,6 +166,33 @@
         }
     }
     /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
+    .quienesSomos__banner{
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 4rem;
+        }
+        .textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 4rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
     .quienesSomos{
         .quienesSomos__titulo{
             margin: 2rem 0;
@@ -174,14 +217,14 @@
         text-align: center;
         margin-bottom: 4rem;
         background-color: black;
-        .contacto__textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
             position: absolute;
             top: 45%;
             left: 50%;
             transform: translate(-50%,-50%);
             font-size: 3.4rem;
         }
-        .contacto__textoBanner--sub{        /* idem */
+        .textoBanner--sub{        /* idem */
             position: absolute;
             top: 60%;
             left: 50%;
@@ -194,8 +237,7 @@
             height: auto;
             opacity: 0.6;
         }
-    }
-    
+    } 
     .contacto{
         border: black solid 1px;
         width: 80vw;
@@ -262,6 +304,34 @@
         }
     }
     /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
+    .preguntas__banner{          /* Banner "PREGUNTAS FRECUENTES" */
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 3.4rem;
+            color: white;
+        }
+        .textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 3.4rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
     .preguntas{
         width: 80vw;
         margin-bottom: 3rem;
@@ -491,6 +561,28 @@
         }
     }
     /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
+    .productos__banner{
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        background-color: black;
+        height: 30vh;
+        overflow: hidden;
+        margin-top: 4rem;
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 6.5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
+    
     .productos{
         padding: 4rem;
         margin-bottom: 2rem;
@@ -542,6 +634,36 @@
         }
     }
     /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
+    .quienesSomos__banner{
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        background-color: black;
+        height: 30vh;
+        overflow: hidden;
+        margin-top: 4rem;
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 5rem;
+        }
+        .textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
+    
     .quienesSomos{
         width: 70%;
         margin-bottom: 5rem;
@@ -554,6 +676,7 @@
         }
 
         .quienesSomos__contenedor{
+            margin-top: 4rem;
             border: 1.5px solid black;
             padding: 4rem;
             flex-direction: column;
@@ -576,15 +699,17 @@
         display: inline-block;
         text-align: center;
         background-color: black;
+        height: 30vh;
+        overflow: hidden;
 
-        .contacto__textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
             position: absolute;
             top: 45%;
             left: 50%;
             transform: translate(-50%,-50%);
             font-size: 6.5rem;
         }
-        .contacto__textoBanner--sub{        /* idem */
+        .textoBanner--sub{        /* idem */
             position: absolute;
             top: 60%;
             left: 50%;
@@ -598,7 +723,6 @@
             opacity: 0.6;
         }
     }
-    
     .gridContacto{          /* Para el grid en versión tablet */
         display: grid;
         grid-template-columns: 50vw 45vw;
@@ -606,7 +730,6 @@
         justify-content: center;
         gap: 0 0vw;
     }
-    
     .contacto{
         width: 100%;
         padding: 4rem 0;
@@ -696,6 +819,35 @@
         }
     }
     /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
+    .preguntas__banner{          /* Banner "PREGUNTAS FRECUENTES" */
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        height: 30vh;
+        background-color: black;
+        overflow: hidden;
+
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 6.5rem;
+        }
+        .textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 6.5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
     .preguntas{
         width: 80vw;
         padding: 4rem;
@@ -939,6 +1091,27 @@
         }
     }
     /* -------------------------------- SECCIÓN PRODUCTOS -------------------------------- */
+    .productos__banner{
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        height: 45vh;
+        overflow: hidden;
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 6.5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
     .productos{
         padding: 4rem;
         margin-bottom: 2rem;
@@ -990,6 +1163,36 @@
         }
     }
     /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
+    .quienesSomos__banner{
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        height: 45vh;
+        overflow: hidden;
+
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 6.5rem;
+        }
+        .textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 6.5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
     .quienesSomos{
         width: 70%;
         margin-bottom: 7rem;
@@ -1025,17 +1228,17 @@
         text-align: center;
         margin-bottom: 4rem;
         background-color: black;
-        height: 65vh;
+        height: 45vh;
         overflow: hidden;
 
-        .contacto__textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
             position: absolute;
             top: 45%;
             left: 50%;
             transform: translate(-50%,-50%);
             font-size: 6.5rem;
         }
-        .contacto__textoBanner--sub{        /* idem */
+        .textoBanner--sub{        /* idem */
             position: absolute;
             top: 60%;
             left: 50%;
@@ -1144,6 +1347,37 @@
         }
     }
     /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
+    .preguntas__banner{          /* Banner "PREGUNTAS FRECUENTES" */
+        position: relative;         /* Para poder escribir texto sobre la imagen */
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: black;
+        height: 45vh;
+        overflow: hidden;
+
+        .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 6.5rem;
+        }
+        .textoBanner--sub{        /* idem */
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 75%;
+            font-size: 6.5rem;
+        }
+        img{            /* Medidas de la imagen */
+            width: 100vw;
+            height: auto;
+            opacity: 0.6;
+        }
+    }
+    
     .preguntas{
         width: 70vw;
         padding: 4rem;
