@@ -263,12 +263,12 @@
     }
     /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
     .preguntas{
-        border: black solid 1.5px;
         width: 80vw;
         margin-bottom: 3rem;
         .preguntas__titulo{
-            margin: 2rem 0;
+            margin: 2rem 0 3rem 0;
             text-align: center;
+            border-bottom: black solid 1.5px;
         }
     
         .preguntas__contenedor{
@@ -697,12 +697,12 @@
     }
     /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
     .preguntas{
-        border: black solid 1.5px;
-        width: 60%;
+        width: 80vw;
         padding: 4rem;
         .preguntas__titulo{
-            text-align: center;
             margin: 2rem 0 4rem 0;
+            text-align: center;
+            border-bottom: black solid 1.5px;
             h1{
                 font-size: 4rem;
             }
@@ -1145,13 +1145,14 @@
     }
     /* -------------------------------- SECCIÓN PREGUNTAS FRECUENTES -------------------------------- */
     .preguntas{
-        border: black solid 1.5px;
-        width: 60%;
+        width: 70vw;
         padding: 4rem;
         margin-bottom: 7rem;
         .preguntas__titulo{
-            text-align: center;
             margin: 2rem 0 4rem 0;
+            text-align: center;
+            border-bottom: black solid 1.5px;
+            padding-bottom: 1rem;
             h1{
                 font-size: 4rem;
             }
