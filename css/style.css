@@ -355,13 +355,13 @@ html {
   /* -------------------------------------- NAV ----------------------------------------- */
   .collapse .navbar-logo {
     /* Logo en la parte izquierda del nav (only desktop/tablet) */
-    width: 12rem;
-    height: 6rem;
+    width: 10rem;
+    height: 4rem;
     overflow: hidden; }
     .collapse .navbar-logo img {
       margin: -2.5rem 0 0 2rem;
-      width: 10rem;
-      height: 10rem; }
+      width: 8rem;
+      height: 8rem; }
   .collapse .nav-link {
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -510,15 +510,16 @@ html {
           color: white; }
   /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
   .quienesSomos {
-    border: 1.5px solid black;
-    padding: 4rem;
     width: 70%;
     margin-bottom: 5rem; }
     .quienesSomos .quienesSomos__titulo {
-      margin: 2rem 0 4rem 0; }
+      margin: 3rem 0 4rem 0; }
       .quienesSomos .quienesSomos__titulo h1 {
-        font-size: 4rem; }
+        font-size: 4rem;
+        text-align: center; }
     .quienesSomos .quienesSomos__contenedor {
+      border: 1.5px solid black;
+      padding: 4rem;
       flex-direction: column; }
       .quienesSomos .quienesSomos__contenedor p {
         text-align: justify;
@@ -854,8 +855,6 @@ html {
           color: white; }
   /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
   .quienesSomos {
-    border: 1.5px solid black;
-    padding: 4rem;
     width: 70%;
     margin-bottom: 7rem; }
     .quienesSomos .quienesSomos__titulo {
@@ -863,6 +862,8 @@ html {
       .quienesSomos .quienesSomos__titulo h1 {
         font-size: 4rem; }
     .quienesSomos .quienesSomos__contenedor {
+      border: 1.5px solid black;
+      padding: 4rem;
       flex-direction: column; }
       .quienesSomos .quienesSomos__contenedor p {
         text-align: justify;

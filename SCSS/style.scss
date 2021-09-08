@@ -341,13 +341,13 @@
     /* -------------------------------------- NAV ----------------------------------------- */
     .collapse{
         .navbar-logo{           /* Logo en la parte izquierda del nav (only desktop/tablet) */
-            width: 12rem;
-            height: 6rem;
+            width: 10rem;
+            height: 4rem;
             overflow: hidden;
             img{
                 margin: -2.5rem 0 0 2rem;
-                width: 10rem;
-                height: 10rem;
+                width: 8rem;
+                height: 8rem;
             }
         }
 
@@ -543,18 +543,19 @@
     }
     /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
     .quienesSomos{
-        border: 1.5px solid black;
-        padding: 4rem;
         width: 70%;
         margin-bottom: 5rem;
         .quienesSomos__titulo{
-            margin: 2rem 0 4rem 0;
+            margin: 3rem 0 4rem 0;
             h1{
                 font-size: 4rem;
+                text-align: center;
             }
         }
 
         .quienesSomos__contenedor{
+            border: 1.5px solid black;
+            padding: 4rem;
             flex-direction: column;
             p{  
                 text-align: justify;
@@ -990,8 +991,6 @@
     }
     /* -------------------------------- SECCIÓN QUIENES SOMOS -------------------------------- */
     .quienesSomos{
-        border: 1.5px solid black;
-        padding: 4rem;
         width: 70%;
         margin-bottom: 7rem;
         .quienesSomos__titulo{
@@ -1002,6 +1001,8 @@
         }
 
         .quienesSomos__contenedor{
+            border: 1.5px solid black;
+            padding: 4rem;
             flex-direction: column;
             p{  
                 text-align: justify;
