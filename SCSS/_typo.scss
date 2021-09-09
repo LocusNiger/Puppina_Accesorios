@@ -1,3 +1,5 @@
+/* Estilos de texto */
+
 .titulo{
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -43,6 +45,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.newsletter-subtexto{
+    color: black;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.newsletter-negrita{
+    color: black;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
 .precio_oferta{         /* De la sección index */
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -73,6 +88,5 @@
 .textoBanner--sub{
     color: white;
     font-weight: 300;
-    font-family: 'Poppins', sans-serif; 
-    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }

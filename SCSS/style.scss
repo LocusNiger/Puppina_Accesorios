@@ -6,11 +6,9 @@
     body{
         background-color: #ffffff;
     }
-    
     .navbar-logo{           /* No se muestra el logo en la parte izq del nav */
         display: none;
     }
-
     .nav-link{      /* Secciones del nav */
         font-size: 1.6rem;
         padding: .5rem;
@@ -18,7 +16,6 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
     }
-    
     .index__logo{       /* Logo del index */
         width: 96vw;
         height: 8rem;
@@ -63,7 +60,6 @@
             }
         }
     }
-    
     .index__productos{      /* Grid de productos en oferta */
         margin-top: 4.5rem;
         h3{
@@ -80,7 +76,6 @@
             }
         }
     }
-    
     .index__newsletter{     /* Sección newsletter */
         margin-top: 3rem;
         h3{
@@ -135,7 +130,6 @@
         }
     }
     .productos{
-    
         .productos__grid{       /* grid de productos */
             display: grid;
             grid-template-columns: 44vw 44vw;
@@ -251,9 +245,15 @@
                 margin-bottom: 1.5rem;
                 input{
                     width: 75%;
+                    padding: 1.2rem 1.5rem;
+                    background-color: #f6f6f6;
+                    border: 0;
                 }
                 textarea{
                     width: 75%;
+                    padding: 1.2rem 1.5rem;
+                    background-color: #f6f6f6;
+                    border: 0;
                 }
             }
             .contacto__button{
@@ -962,7 +962,6 @@
             width: 18vw;
         }
     }
-
     .index__novedades{
         display: flex;
         flex-direction: column;
@@ -1004,7 +1003,6 @@
             }
         }
     }
-    
     .index__productos{
         .index__titulo{
             margin: 2rem 0;
@@ -1048,7 +1046,6 @@
             }
         }
     }
-
     .index__newsletter{
         margin: 7rem 0 5rem 0;
 
@@ -1221,7 +1218,6 @@
         }
     }
     /* -------------------------------- SECCIÓN CONTACTO -------------------------------- */
-    
     .contacto__banner{          /* Banner "CONTACTANOS" */
         position: relative;         /* Para poder escribir texto sobre la imagen */
         display: inline-block;
@@ -1252,7 +1248,6 @@
             opacity: 0.6;
         }
     }
-
     .gridContacto{          /* Para el grid en versión desktop */
         display: grid;
         grid-template-columns: 63vw 30vw;
@@ -1260,7 +1255,6 @@
         justify-content: center;
         gap: 0 0;
     }
-    
     .contacto{          /* Parte del formulario de contacto */
         width: 100%;
         margin: 0;
@@ -1376,8 +1370,7 @@
             height: auto;
             opacity: 0.6;
         }
-    }
-    
+    }  
     .preguntas{
         width: 70vw;
         padding: 4rem;

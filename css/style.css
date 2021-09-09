@@ -10,6 +10,7 @@ html {
     text-decoration: none;
     color: #212529; }
 
+/* Estilos de texto */
 .titulo {
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -51,6 +52,17 @@ html {
   font-weight: 500;
   font-family: 'Poppins', sans-serif; }
 
+.newsletter-subtexto {
+  color: black;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase; }
+
+.newsletter-negrita {
+  color: black;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif; }
+
 .precio_oferta {
   /* De la sección index */
   font-weight: 500;
@@ -78,8 +90,7 @@ html {
 .textoBanner--sub {
   color: white;
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase; }
+  font-family: 'Poppins', sans-serif; }
 
 .centrar {
   /* Para centrar contenido */
@@ -302,9 +313,15 @@ html {
       width: 80vw;
       margin-bottom: 1.5rem; }
       .contacto .contacto__contenedor .contacto__form input {
-        width: 75%; }
+        width: 75%;
+        padding: 1.2rem 1.5rem;
+        background-color: #f6f6f6;
+        border: 0; }
       .contacto .contacto__contenedor .contacto__form textarea {
-        width: 75%; }
+        width: 75%;
+        padding: 1.2rem 1.5rem;
+        background-color: #f6f6f6;
+        border: 0; }
     .contacto .contacto__contenedor .contacto__button {
       border: solid black 1px;
       margin: 2rem 6rem 2rem 6rem;
