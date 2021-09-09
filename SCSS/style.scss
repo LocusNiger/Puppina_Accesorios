@@ -65,7 +65,7 @@
         h3{
             margin: 1rem 0 2rem 0;
         }
-        .index__gridproductos{
+        .index__gridproductos{      /* Grid de productos */
             margin-top: 1rem;
             display: grid;
             grid-template-columns: 44vw 44vw;
@@ -143,7 +143,7 @@
             .texto{
                 margin-bottom: 0.3rem;      /* para sacarle el margen */
             }
-            .productos__botonComprar{
+            .productos__botonComprar{           /* botón */
                 border: 1px solid black;
                 transition: all 0.3s;
                 a{
@@ -240,7 +240,7 @@
             margin: 2rem 0;
         }
         .contacto__contenedor{
-            .contacto__form{
+            .contacto__form{            /* Estilos del formulario */
                 width: 80vw;
                 margin-bottom: 1.5rem;
                 input{
@@ -256,7 +256,7 @@
                     border: 0;
                 }
             }
-            .contacto__button{
+            .contacto__button{          /* Botón */
                 border: solid black 1px;
                 margin: 2rem 6rem 2rem 6rem;
                 padding: 1rem 0.5rem;
@@ -274,7 +274,7 @@
             }
         }
     }
-    .contacto__GIT{
+    .contacto__GIT{                     /* Get in touch */
         background-color: black;
         width: 80vw;
         padding: 1rem;
@@ -410,17 +410,17 @@
 @media only screen and (min-width: 500px) and (max-width: 1024px){
     /* -------------------------------------- NAV ----------------------------------------- */
     .collapse{
+        height: 6rem;
         .navbar-logo{           /* Logo en la parte izquierda del nav (only desktop/tablet) */
-            width: 10rem;
+            width: 10vw;
             height: 4rem;
             overflow: hidden;
             img{
-                margin: -2.5rem 0 0 2rem;
-                width: 8rem;
-                height: 8rem;
+                margin: -1.5rem 0 0 2rem;
+                width: 6rem;
+                height: 6rem;
             }
         }
-
         .nav-link{
             font-size: 1.5rem;
             font-family: 'Poppins', sans-serif;
@@ -429,7 +429,7 @@
         }
     }
     /* -------------------------------- SECCIÓN INDEX -------------------------------- */
-    .index__logo{
+    .index__logo{           /* No se muestra el logo de versión mobile */
         display: none;
         height: 16rem;
         img{
@@ -568,7 +568,6 @@
         background-color: black;
         height: 30vh;
         overflow: hidden;
-        margin-top: 4rem;
         .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
             position: absolute;
             top: 50%;
@@ -593,7 +592,7 @@
             }
         }
 
-        .productos__grid{
+        .productos__grid{       /* grid productos */
             display: grid;
             grid-template-columns:  25vw 25vw 25vw;
             grid-template-rows: auto;
@@ -641,7 +640,6 @@
         background-color: black;
         height: 30vh;
         overflow: hidden;
-        margin-top: 4rem;
         .textoBanner{      /* Para que el texto sobre la imagen quede centrado */
             position: absolute;
             top: 45%;
@@ -664,7 +662,7 @@
         }
     }
     
-    .quienesSomos{
+    .quienesSomos{      
         width: 70%;
         margin-bottom: 5rem;
         .quienesSomos__titulo{
